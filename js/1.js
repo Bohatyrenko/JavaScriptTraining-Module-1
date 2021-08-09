@@ -243,3 +243,24 @@
 
 //   console.log("Нечетное i: ", i); // 1, 3, 5, 7, 9
 // }
+
+//Возведение в степень - Math.pow
+// const q = Math.pow(2, 3); // аналогичная запись - const q = 2 ** 3;
+// console.log(q);
+
+// const base = Number(prompt("Введите число!"));
+// console.log("число", base);
+
+// const degree = Number(prompt("Введите степень!"));
+// console.log("степень", degree);
+
+// const result = base ** degree;
+// console.log(
+//   `Результат возведение числа - ${base} в степень - ${degree} равен ${result}`
+// );
+
+// Генерация чисел от min до max
+const min = 10;
+const max = 100;
+const result = Math.random() * (max - min) + min;
+console.log(Number.parseInt(result));
