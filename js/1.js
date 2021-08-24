@@ -260,7 +260,25 @@
 // );
 
 // Генерация чисел от min до max
-const min = 10;
-const max = 100;
-const result = Math.random() * (max - min) + min;
-console.log(Number.parseInt(result));
+// const min = 10;
+// const max = 100;
+// const result = Math.random() * (max - min) + min;
+// console.log(Number.parseInt(result));
+
+// const myNoun = "dog";
+// const myAdjective = "big";
+// const myVerb = "ran";
+// const myAdverb = "quickly";
+
+// const wordBlanks =
+//   "This " +
+//   myNoun +
+//   " is very " +
+//   myAdjective +
+//   " and" +
+//   myVerb +
+//   " very " +
+//   myAdverb +
+//   "."; // Change this line
+
+// console.log(wordBlanks);

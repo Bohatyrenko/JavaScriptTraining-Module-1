@@ -7,7 +7,9 @@
 //   f
 // );
 
-//Number.parseInt() - для отображения только целых чисел и Number.parseFloat() - для отображения только дробных чисел
+//Number.parseInt() - для отображения только целых чисел
+//Number.parseFloat() - для отображения только дробных чисел
+
 // const a = prompt("Сколько Вам лет?");
 // console.log(a);
 // const b = Number.parseInt(a);
@@ -51,7 +53,7 @@
 //indexOf() - вернет позицию (индекс) на которой находится первое совпадение подстроки или -1, если ничего не найдено
 //includes() - один из наиболее часто используемых методов, в большинстве случаев заменяет indexOf, проверяет входит ли подстрока в строку, возвращает true или false
 
-const a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const b = "Hello, it is JavaScript";
-console.log(a);
-console.log(b);
+// const a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const b = "Hello, it is JavaScript";
+// console.log(a);
+// console.log(b);
