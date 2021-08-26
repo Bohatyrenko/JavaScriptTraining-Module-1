@@ -108,11 +108,47 @@ let message = "This login is not correct";
 
 // console.log(message);
 
-for (const login of logins) {
-  if (login === correctLogin) {
-    message = `${login} - This login is correct`;
-    break;
-  }
-}
+// for (const login of logins) {
+//   if (login === correctLogin) {
+//     message = `${login} - This login is correct`;
+//     break;
+//   }
+// }
 
-console.log(message);
+// console.log(message);
+
+// Нахождение самого маленького числа
+// const array = [45, 34, 26, 74, 56, 96, 23, 46];
+
+// let min = array[0];
+
+// for (const number of array) {
+//   if (number < min) {
+//     min = number;
+//   }
+// }
+
+// console.log(min);
+
+// Нахождение самого большого числа
+// const array = [45, 34, 26, 74, 56, 96, 23, 46];
+
+// let max = array[0];
+
+// for (const number of array) {
+//   if (number > max) {
+//     max = number;
+//   }
+// }
+
+// console.log(max);
+
+//Использование метода join
+const friends = ["Alex", "Frenk", "Olvin", "Stive"];
+const allFriends = friends.join(", ");
+console.log(allFriends);
+
+// for (const friend of friends) {
+//   allFriends += friend;
+//   console.log(allFriends);
+// }
