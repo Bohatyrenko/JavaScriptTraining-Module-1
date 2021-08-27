@@ -144,11 +144,25 @@ let message = "This login is not correct";
 // console.log(max);
 
 //Использование метода join
-const friends = ["Alex", "Frenk", "Olvin", "Stive"];
-const allFriends = friends.join(", ");
-console.log(allFriends);
+// const friends = ["Alex", "Frenk", "Olvin", "Stive"];
+// const allFriends = friends.join(", ");
+// console.log(allFriends);
 
 // for (const friend of friends) {
 //   allFriends += friend;
 //   console.log(allFriends);
 // }
+
+const string = "JavaScript";
+let letters = "";
+
+// const array = string.split("");
+// console.log(string);
+for (let letter of string) {
+  letters +=
+    letter === letter.toUpperCase()
+      ? (letter = letter.toLowerCase())
+      : (letter = letter.toUpperCase());
+}
+
+console.log(letters);
