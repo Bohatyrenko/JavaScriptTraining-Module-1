@@ -153,16 +153,45 @@ let message = "This login is not correct";
 //   console.log(allFriends);
 // }
 
-const string = "JavaScript";
-let letters = "";
+// const string = "JavaScript";
+// let letters = "";
 
-// const array = string.split("");
+// // const array = string.split("");
+// // console.log(string);
+// for (let letter of string) {
+//   letters +=
+//     letter === letter.toUpperCase()
+//       ? letter.toLowerCase()
+//       : letter.toUpperCase();
+// }
+
+// console.log(letters);
+
+// const array = ["sTriNg", "iS", "mAnY", "LetTers"];
+
+// const string = array.join(" ").toLowerCase().toUpperCase();
+
 // console.log(string);
-for (let letter of string) {
-  letters +=
-    letter === letter.toUpperCase()
-      ? (letter = letter.toLowerCase())
-      : (letter = letter.toUpperCase());
+// // console.log(array);
+// for (const letter of string) {
+//   // console.log(letter);
+// }
+
+// const title =
+//   "A selection of powerful news photographs taken around the world this week";
+
+// const normalize = title.toLowerCase().split(" ").join("-");
+
+// console.log(normalize);
+
+const array1 = [32, 43, 21, 57, 43];
+const array2 = [78, 32, 95, 74];
+const array3 = [65, 2, 46, 23];
+let total = 0;
+
+const allArray = array1.concat(array2, array3);
+for (const number of allArray) {
+  total += number;
 }
 
-console.log(letters);
+console.log(total);
