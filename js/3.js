@@ -20,18 +20,18 @@
 
 // fnB([300, 45, 67, 46, 69]);
 
-const f = [1, 3, 4, 5, 6, 7];
+// const f = [1, 3, 4, 5, 6, 7];
 
-const find = function () {
-  const logins = [
-    "trsddfsf",
-    "sfdsgsb",
-    "sdfafafagg",
-    "czxvbwwtrb",
-    "faqertqgfvxcb4tg",
-    "asdfxbvxbgng",
-  ];
-};
+// const find = function () {
+//   const logins = [
+//     "trsddfsf",
+//     "sfdsgsb",
+//     "sdfafafagg",
+//     "czxvbwwtrb",
+//     "faqertqgfvxcb4tg",
+//     "asdfxbvxbgng",
+//   ];
+// };
 
 // const logins = [
 //   "trsddfsf",
@@ -114,11 +114,90 @@ const find = function () {
 // console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
 // console.log(checkForSpam("[SPAM] How to earn fast money?"));
 
-function XO(str) {
-  const a = 3;
-  const b = 3;
-  const c = a === b; // true or false
-  return c;
-}
+// function XO(str) {
+//   const a = 3;
+//   const b = 3;
+//   const c = a === b; // true or false
+//   return c;
+// }
 
-console.log(XO());
+// console.log(XO());
+
+// function nbYear(p0, percent, aug, p) {
+//   // your code
+// }
+
+// console.log(nbYear(1500, 5, 100, 5000), 15);
+// console.log(nbYear(1500000, 2.5, 10000, 2000000), 10);
+// console.log(nbYear(1500000, 0.25, 1000, 2000000), 94);
+
+// function a(arr1, arr2) {
+// return arr1.sort().toString() === arr2.sort().toString();
+// if (arr1.length !== arr2.length) return false;
+// arr1.sort();
+// arr2.sort();
+// for (let i = 0; i < arr1.length; i += 1) {
+//   if (arr1[i] !== arr2[i]) return false;
+// }
+// return true;
+//   console.log("arr1JSON", JSON.stringify(arr1.sort()));
+//   console.log("arr2JSON", JSON.stringify(arr2.sort()));
+
+//   return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
+// }
+
+// const arr1 = [2, 1, 2, 3, 4];
+// const arr2 = [2, 1, 2, 4, 3];
+// const arr3 = [2, 1, 2, 3, 4];
+// const arr4 = [2, 1, 2, 4, 3];
+// console.log(a(arr1, arr2));
+// function arraySum(arr) {
+//   const arr1 = arr.toString().split(",");
+//   let total = 0;
+
+//   for (const el of arr1) {
+//     total += Number.isNaN(+el) ? 0 : +el;
+//   }
+//   return total;
+// }
+
+// console.log(arraySum([1, 2, [3, [4, 5]], [6, 7], 8, [9, [10]]]));
+
+// const inputName = "color";
+// const inputValue = "tomato";
+
+// const colorPicker = {
+//   [inputName]: inputValue,
+// };
+
+// console.log(colorPicker);
+
+const playlist = {
+  name: "Name",
+  age: 13,
+  tracks: [1, 2, 3],
+  trackCount: 10,
+  changename(newName) {
+    this.name = newName;
+  },
+  changeAge(age) {
+    console.log("befor", this.age);
+
+    console.log("midle", this.age);
+
+    this.age = age;
+
+    console.log("after", this.age);
+  },
+  addTrack(track) {
+    this.tracks.push(track);
+    this.trackCount = this.tracks.length;
+  },
+};
+
+playlist.addTrack("new Track");
+console.log(playlist.tracks);
+playlist.changename("Alex");
+playlist.changeAge(209);
+
+console.log(playlist.trackCount);
