@@ -86,16 +86,16 @@
 
 // console.log(total);
 
-const logins = [
-  "trsddfsf",
-  "sfdsgsb",
-  "sdfafafagg",
-  "czxvbwwtrb",
-  "faqertqgfvxcb4tg",
-  "asdfxbvxbgng",
-];
-const correctLogin = "sdfafafagg";
-let message = "This login is not correct";
+// const logins = [
+//   "trsddfsf",
+//   "sfdsgsb",
+//   "sdfafafagg",
+//   "czxvbwwtrb",
+//   "faqertqgfvxcb4tg",
+//   "asdfxbvxbgng",
+// ];
+// const correctLogin = "sdfafafagg";
+// let message = "This login is not correct";
 
 // for (let i = 0; i < logins.length; i += 1) {
 //   //   console.log(logins[i]);
@@ -184,14 +184,35 @@ let message = "This login is not correct";
 
 // console.log(normalize);
 
-const array1 = [32, 43, 21, 57, 43];
-const array2 = [78, 32, 95, 74];
-const array3 = [65, 2, 46, 23];
-let total = 0;
+// const array1 = [32, 43, 21, 57, 43];
+// const array2 = [78, 32, 95, 74];
+// const array3 = [65, 2, 46, 23];
+// let total = 0;
 
-const allArray = array1.concat(array2, array3);
-for (const number of allArray) {
-  total += number;
+// const allArray = array1.concat(array2, array3);
+// for (const number of allArray) {
+//   total += number;
+// }
+
+// console.log(total);
+
+// привести все в нижний региср
+// разбить в массив через метою split
+// соединить методом join с разделителем тире
+
+// function slugify(title) {
+//   return title.toLowerCase().split(" ").join("-");
+// }
+
+// console.log(slugify("Arrays for begginers"));
+
+function makeArray(firstArray, secondArray, maxLength) {
+  let allArray = firstArray.concat(secondArray);
+
+  if (allArray.length > maxLength) {
+    allArray = allArray.slice(0, maxLength);
+  }
+  return allArray;
 }
 
-console.log(total);
+console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3));
